@@ -1,0 +1,32 @@
+ <?php
+   if(isset($_POST['submit']))
+	{	   
+	require("connection.php");
+	$names=$_POST['names'] ;
+$prod_name=$_POST['prod_name'] ;
+$price=$_POST['price'] ;
+$quantity=$_POST['quantity'] ;
+$quality=$_POST['quality'] ;
+
+
+			 mysql_query("UPDATE available SET quantity = quantity - $quantity where prod_name='$prod_name' and quality='$quality'" ) 
+		 or die($mysql_error());
+		 							 
+               
+				
+		 mysql_query("INSERT INTO consumation(names,prod_name,price,quantity,quality,date) VALUES('$names','$prod_name','$price','$quantity','$quality','$date')")
+		  or die(mysql_error());
+		  
+				
+				 echo "Process Updated!";
+		 header("location: consumation.php");
+
+				
+				
+	        }
+?>
+
+    <th scope="col"></th>
+    <th scope="col">&nbsp;</th>
+  </tr>
+</table>

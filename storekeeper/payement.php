@@ -1,0 +1,125 @@
+<center>
+<form action="payrment.php" method="POST" style="width: 90%; "  style="height: 100%; " >	
+					 <table width="600"  style="border-style:solid">
+  <tr>
+    <td colspan="2">
+		<!--the code bellow is used to display the message of the input validation-->
+		 <?php
+			if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+			echo '<ul class="err">';
+			foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+				echo '<li>',$msg,'</li>';
+				}
+			echo '</ul>';
+			unset($_SESSION['ERRMSG_ARR']);
+			}
+		?>
+	</td>
+  </tr>
+  <tr>
+ 
+                          <h3>CONFIRM THE PAYEMENT<h3/>
+                          <tr>
+                          <td><label><b>Supplie Names</b></label></td>
+                            <td ><input type="text" size="20" height="40"name="supplier" placeholder="" required value="<?php
+						include 'connection.php';
+			            $id=$_GET['id'];
+						$result = mysql_query("SELECT * FROM stock where id='$id'")or die (mysql_error());
+						while ($row= mysql_fetch_array ($result) ){
+						
+							echo $row['supplier'];
+												}
+						         ?>"readonly></td>
+
+
+                            <td><label><b>Payement</b></label></td>
+                            <td ><input type="text" size="20" height="40"name="paystatus" placeholder="" required value="PAID"readonly></td></tr>
+							
+							<tr>
+							<td><label><b>Product name</b></label></td>
+                            <td><input type="text" size="20" height="40"name="prod_name" placeholder="" required value="<?php
+						include 'connection.php';
+			            $id=$_GET['id'];
+						$result = mysql_query("SELECT * FROM stock where id='$id'")or die (mysql_error());
+						while ($row= mysql_fetch_array ($result) ){
+						
+							echo $row['prod_name'];
+												}
+						         ?>"readonly></td>
+                          
+                            <td ><label><b>Quantity</b></label></td>
+                            <td><input type="text" size="20" height="40"name="quantity" placeholder="" required value="<?php
+						include 'connection.php';
+			            $id=$_GET['id'];
+						$result = mysql_query("SELECT * FROM stock where id='$id'")or die (mysql_error());
+						while ($row= mysql_fetch_array ($result) ){
+						
+							echo $row['quantity'];
+												}
+						         ?>"readonly></td></tr>
+
+
+
+
+							<tr>
+							<td><label><b>Transaction Number</b></label></td>
+                            <td><input type="text" size="20" height="40"name="id" placeholder="" required value="<?php
+						include 'connection.php';
+			            $id=$_GET['id'];
+						$result = mysql_query("SELECT * FROM stock where id='$id'")or die (mysql_error());
+						while ($row= mysql_fetch_array ($result) ){
+						
+							echo $row['id'];
+												}
+						         ?>"readonly></td>
+                          
+                            <td ><label><b>Time</b></label></td>
+                            <td><input type="text" size="20" height="40"name="time" placeholder="" required value="<?php
+						include 'connection.php';
+			            $id=$_GET['id'];
+						$result = mysql_query("SELECT * FROM stock where id='$id'")or die (mysql_error());
+						while ($row= mysql_fetch_array ($result) ){
+						
+							echo $row['time'];
+												}
+						         ?>"readonly></td></tr>
+
+
+
+
+                            <tr><td><label><b>Quality</b></label></td>
+                            <td><input type="text" size="20"height="40" name="quality" placeholder="" required value="   <?php
+						include 'connection.php';
+			            $id=$_GET['id'];
+						$result = mysql_query("SELECT * FROM stock where id='$id'")or die (mysql_error());
+						while ($row= mysql_fetch_array ($result) ){
+						
+							echo $row['quality'];
+												}
+						         ?>"readonly> </td>
+						  
+						 
+
+                            <td ><label><b>Amount</b></label></td>
+                            <td><input type="text" size="20" height="40"name="tot_amount" placeholder="" required value="<?php
+						include 'connection.php';
+			            $id=$_GET['id'];
+						$result = mysql_query("SELECT * FROM stock where id='$id'")or die (mysql_error());
+						while ($row= mysql_fetch_array ($result) ){
+						
+							echo $row['tot_amount'];
+												}
+						         ?>"readonly></td>
+                            
+						  
+						  </tr>
+                          <tr>
+                            <td></td>
+                            <td><input type="submit" value="Register transaction" name="submit"></td>
+                      
+                          </tr>
+
+ </table>
+					</form></center>
+
+

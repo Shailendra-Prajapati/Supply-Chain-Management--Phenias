@@ -1,0 +1,435 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight:bold;
+    color: #577B95;
+    text-decoration:underline;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+
+*
+{
+    border: 0;
+    margin: 0;
+}
+
+body
+{
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #000000;
+    line-height: 20px;
+    background: url(images/header.jpg) center top fixed;
+    background-repeat:repeat-x;
+    background-position: top;
+}
+
+#mainbg{
+    width: 950px;
+    margin: 0 auto;
+}
+
+#main{
+    margin: 0 auto;
+    width: 950px;
+    padding-top: 0px;
+}
+
+#header{
+
+    background-position: top;
+    width: 100%;
+}
+
+#logo{
+    width: 950px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 0px;
+    height: 40px;
+}
+
+#logo a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 16px;
+    color: #0A4E80;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+#logo H2 a{
+    font-size: 10px;
+}
+
+#buttons{
+    width: 950px;
+    height: 57px;
+    margin: 0 auto;
+    padding-top: 0px;
+    background: url(images/menubg.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+#buttons ul {
+    padding-left: 0px;
+}
+
+#buttons li {
+    display: inline;
+}
+
+#buttons a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    float: left;
+    width: 20%;
+    height: 37px;
+    padding-top: 19px;
+    margin-top: 1px;
+}
+
+#buttons a:hover, .active{
+   background: url(images/menu_h.png);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.header_back
+{
+background: url(images/header_back.png) no-repeat;
+width: 950px;
+height: 105px;
+margin-top: 0px;
+padding-top: 0px;
+
+border-left: none;
+  border-right: none;
+  /*background: url(images/menubg.png);*/
+  /*background: url(images/title.png);*/
+  color: #fff;
+  cursor: default;
+  border: 1px solid #666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+
+#content{
+
+}
+
+#left{
+    width:249px;
+    padding-left: 1px;
+    float: left;
+}
+
+#left h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    color: #ffffff;
+    font-size: 16px;
+    text-align:center;
+    height: 27px;
+    padding-top: 10px;
+    background: url(images/title_left.png);
+    background-repeat:no-repeat;
+    background-position:top left;
+}
+
+#left .company{
+    padding-top: 10px;
+}
+
+.numleft{
+    background: url(images/numbg.png);
+    background-repeat: no-repeat;
+    
+    width: 37px;
+    min-height: 37px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 0px 8px 0px 8px;
+}
+
+.numleft p{
+    padding-top: 10px;
+}
+
+.newsright{
+    padding-left: 53px;
+    padding-right: 10px;
+}
+
+#left .read a{
+    color: #577B95;
+    font-weight:normal;
+    font-style: italic;
+    font-size: 12px;
+    text-decoration:none;
+    border-bottom: 1px dotted #577B95;
+    margin-right: 10px;
+}
+
+.left_grad{
+    background: url(images/left_grad.png) no-repeat;
+    background-position: top left;
+    min-height: 80px;
+}
+
+.left_bg{
+    background: url(images/left_bg.png) repeat-y;
+    background-position:left;
+}
+
+.left_bot{
+    background: url(images/left_bot.png) repeat-y;
+    background-position:left top;
+    height: 5px;
+    margin-bottom: 10px;
+}
+
+#center{
+    width: 480px;
+    padding-left: 10px;
+    float: left;
+}
+
+#center p{
+    padding-left:0px;
+    padding-right:0px;
+    padding-bottom: 5px;
+}
+
+.text{
+    padding: 10px;
+    background: #ffffff url(images/text_bg.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    min-height: 64px;
+}
+
+
+#center H1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    color: #00456e;
+    font-size: 16px;
+    height: 36px;
+    width: 470px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background: url(images/title_center.png);
+    background-repeat:no-repeat;
+    background-position: top;
+}
+
+.read{
+    text-align: right;
+    padding-bottom:5px;
+    padding-right: 5px;
+}
+
+#center .read{
+    height: 26px;
+    padding-top: 3px;
+    background: url(images/read.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#center .read a{
+    color: #ffffff;
+    font-weight:normal;
+    font-style: italic;
+    font-size: 12px;
+    padding-right: 15px;
+    text-decoration:none;
+
+}
+
+.read a:hover{
+    text-decoration:underline;
+}
+
+#right{
+    width:198px;
+    padding-right: 1px;
+    float:right;
+}
+
+#right h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    color: #ffffff;
+    font-size: 16px;
+    text-align:center;
+    height: 27px;
+    padding-top: 10px;
+    background: url(images/title_right.png);
+    background-repeat:no-repeat;
+    background-position:top left;
+}
+
+.right_grad{
+    background: url(images/right_grad.png) no-repeat;
+    background-position: top left;
+    min-height: 80px;
+}
+
+.right_bg{
+    background: url(images/right_bg.png) repeat-y;
+    background-position:left;
+}
+
+.right_bot{
+    background: url(images/right_bot.png) repeat-y;
+    background-position:left top;
+    height: 4px;
+    margin-bottom: 10px;
+}
+
+.categories{
+
+}
+
+.categories a{
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+.categories a:hover{
+    font-weight: normal;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.categories ul{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.categories ul li{
+    list-style: none;
+    padding: 3px 5px 3px 5px;
+    border-bottom: 1px dotted #979797;
+}
+
+.recent a{
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+.recent ul{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.recent ul li{
+    list-style: none;
+    padding: 3px 5px 3px 13px;
+    background: url(images/ls1.png);
+    background-repeat: no-repeat;
+    background-position: 0px 11px;
+}
+
+#footer
+{
+    height: 40px;
+    font-size: 10px;
+    color: #ffffff;
+    padding-top: 5px;
+    text-align: center;
+    clear:both;
+    background: url(images/footer.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 1px;
+    padding-bottom: 5px;
+}
+
+#footer a{
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.padding{
+    padding: 10px;
+    color:#FF0000;
+    font-weight: bold;
+}
+tr {
+  border-left: none;
+  border-right: none;
+  /*background: url(images/menubg.png);*/
+  /*background: url(images/title.png);*/
+  color: #fff;
+  cursor: default;
+  
+}
+th {
+  border-left: none;
+  border-right: none;
+  /*background: url(images/menubg.png);*/
+  
+  color: #fff;
+  cursor: default;
+  border: 1px solid #666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+td:hover {
+  background: url(images/list.png);
+  cursor: pointer;
+}
+li:hover {
+  background: url(images/list.png);
+  cursor: pointer;
+}
+input[type="submit"]:hover, input[type="submit"]:active {
+  cursor: pointer;
+  background: #fff;
+  color: #ef7d50;
+}
+table {
+  width: 100%;
+  /*border-collapse: collapse;*/
+  border: 1px solid #666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}

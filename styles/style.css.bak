@@ -1,0 +1,398 @@
+/*
+Design by Phenias UWIMBABAZI
+pheniasu@gmail.com
+
+Name       : Young Graduate Enterpreneurs Rwanda Ltd.
+Description: Easy And Simple.
+Version    : 1.0
+Released   : 2013
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: underline;
+	color: #383838;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-size: 12pt;
+	line-height: 1.8em;
+	font-family: Arial, sans-serif;
+	background: #dddddd;
+	color: #656565;
+}
+
+br.clear {
+	clear: both;
+}
+
+h1,h2,h3,h4 {
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+
+h2,h3,h4 {
+	margin-bottom: 1.5em;
+	font-family: Arvo, serif;
+	color: #000000;
+}
+
+strong {
+	color: #000000;
+}
+
+img.left {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+img.top {
+	margin: 8px 0 20px 0;
+}
+
+p {
+	margin-bottom: 1.25em;
+}
+
+ul {
+	margin-bottom: 1.25em;
+}
+
+.date {
+	background: #222222;
+	color: #ffffff;
+	font-size: 0.75em;
+	padding: 2px;
+	display: inline-block;
+	width: 45px;
+	text-align: center;
+	margin-right: 1em;
+}
+
+.imageList {
+	list-style: none;
+}
+
+.imageList li {
+	clear: both;
+}
+
+.box {
+	margin: 0 0 30px 0;
+	overflow: hidden;
+}
+
+#bg1 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 430px;
+	background: #ccc;
+	z-index: 1;
+	box-shadow: inset 0px 280px 60px 0px rgba(0,0,0,0.3);
+}
+
+#bg2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 188px;
+	background:#ffffff;
+	z-index: 2;
+	box-shadow: inset 0px 10px 60px 0px rgba(0,0,0,0.7);
+}
+
+#banner {
+	position: relative;
+	width: 850px;
+	height: 200px;
+}
+
+#banner .captions {
+	position: absolute;
+	right: 0;
+	top: 75px;
+	text-shadow: 2px 2px 0px rgba(0,0,0,1.0);
+}
+
+#banner .captions h2 {
+	background: rgba(0,0,0,0.7);
+	color: #ffffff;
+	padding: 28px;
+	margin: 0;
+}
+
+#banner .img {
+	width: 940px;
+	height: 500px;
+}
+
+#banner .captions h3 {
+	background: rgba(10,127,153,0.8);
+	color: #ffffff;
+	padding: 28px;
+	margin: 0;
+}
+
+#content {
+	width: 600px;
+	margin: 0 0 0 270px;
+	padding: 0;
+}
+
+#copyright {
+	padding: 40px 0 80px 0;
+	text-align: center;
+	color: #777777;
+	width:900px;
+}
+
+#copyright a {
+	color: #777777;
+}
+
+#header {
+	position:relative;
+	padding: 28px;
+	height: 100px;
+	background: #0a7f99;
+	color: #ffffff;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	box-shadow: inset 0px -40px 60px 0px #005B6D;
+	border-bottom: solid 1px #003B47;
+	 border: 1px solid orange;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+	width:894px;
+}
+
+#logo {
+	position: absolute;
+	bottom: 0;
+	left: 28px;
+	height: 138px;
+	line-height: 138px;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#logo h1 {
+	font-size: 1.40em;
+	font-family: Arvo, serif;
+}
+
+#main {
+	position: relative;
+	padding: 60px 28px 0px 28px;
+	width: 900px;
+}
+
+#main ul {
+	list-style: none;
+}
+
+#main ul li {
+	padding: 8px 0 8px 0;
+	border-top: solid 1px #d1d1d1;
+}
+
+#main ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#nav {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	padding: 0 28px 0 28px;
+	width: 800px;
+	height: 48px;
+	line-height: 48px;
+	margin: 0 0 28px 0;
+	background: #007289;
+	font-size: 0.9em;
+	border-bottom: solid 1px #009FBF;
+	border-top: solid 1px #1098B3;
+	box-shadow: inset 0px -10px 40px 0px #005B6D;
+	 border: 1px solid orange;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+#nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+#nav a:hover {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:17px;
+	font-family:bold;
+  text-shadow: 2px 2px 2px rgba(0,5,0,0.9);
+	color: black;
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav ul li {
+	display: inline;
+	padding: 0 12px 0 12px;
+}
+
+#nav ul li.first {
+	padding-left: 0;
+}
+
+#outer {
+	position: relative;
+	z-index: 3;
+	width: 952px;
+	margin: 30px auto 0 auto;
+	background: #ffffff;
+	box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.2);
+}
+
+#search {
+	position: absolute;
+	bottom: 0;
+	right: 8px;
+	height: 100px;
+	line-height: 138px;
+}
+
+#search input.text {
+	padding: 10px 40px 10px 10px;
+	
+	border: 0;
+	width: 250px;
+	color: #777;
+}
+
+#sidebar {
+	width: 250px;
+	float: left;
+	padding: 0;
+}
+
+/*------------------ start of midle pan-----------------*/
+#middle_pan
+{
+	width:500px; 
+	padding:5px;
+	margin-top:5px;
+	margin-left:5px;
+	background:#f7f8f9;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	float:left;
+}
+/*------------------ Latest News block -----------------*/
+ul#news,li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ ul#news li
+{
+	display:block;	
+	margin-top:2px;
+	float:left;
+}
+ul#news li a img
+{
+	float:left;
+	margin-right:5px;
+	margin-bottom:1px;
+}
+ul#news li a .title
+{
+	float:left;
+	width:320px;
+	padding:5px;
+	margin-bottom:5px;
+	background:#cccccc;
+	color:#black;
+	text-transform:justify;
+	font-weight:bold;
+	display:block;
+	text-align:left;
+	font-size:13px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+ul#news li a .title strong
+{
+	color:#ffffff;
+	text-transform:none;
+	display:block;
+	font-size:9px;
+	font-weight:bold;
+}
+ul#news li .more a
+{
+	color:#445a41;
+	display:block;
+	float:right;
+	text-align:right;
+	font-weight:bold;
+	border:0px;
+}
+ul#news li .more a:hover
+{
+	color:#29eb10;
+	background:none;
+	border:0px;
+	text-decoration:underline;
+}
+ul#news li a
+{
+	text-decoration:none;
+	color: #68707c;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border-top:2px solid #445a41;
+	padding:5px;
+	width:490px;
+	float:left;
+}
+ul#news li a:hover
+{
+	text-decoration:none;
+	color:#445a41;
+	background:#bcbbcb;
+	border-top:2px solid #29eb10; 
+}
+ul#news img
+{
+width:150px;
+height:113px
+}
+/*------------------ end of midle pantb-----------------*/
